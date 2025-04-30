@@ -1,0 +1,36 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add print styles */
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  
+  h1 {
+    font-size: 18pt;
+  }
+  
+  h2 {
+    font-size: 16pt;
+  }
+  
+  h3 {
+    font-size: 14pt;
+  }
+  
+  .print-pb-0 {
+    page-break-before: avoid;
+  }
+  
+  .print-pa-0 {
+    page-break-after: avoid;
+  }
+  
+  /* Hide unnecessary elements when printing */
+  .no-print {
+    display: none !important;
+  }
+}
